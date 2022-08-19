@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background: url(../photo/gambling-7270965_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: orangered;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px;
+    font-size: 50px;
+    color: rgb(7, 105, 243);
+}
+
+h2 {
+    color: rgb(7, 105, 243);
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.resultat {
+    width: 23%;
+    height: 300px;
+    border: solid 3px white;
+    margin: 90px 0 0 30px;
+    border-radius: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    background: url(../photo/bingo-7318132_1920.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultat p {
+    height: 50px;
+    width: 250px;
+    border: solid 3px white;
+    opacity: 0;
+}
+
+#polux {
+    color: black;
+    background-color: aliceblue;
+}
+ 
+.grille {
+    height: 500px;
+    width:500px;
+    border-radius: 100%;
+    margin-left: 100px;
+    margin-top: 50px;
+    background: rgb(0,36,12);
+    background: linear-gradient(90deg, rgba(0,36,12,1) 22%, rgba(121,9,26,1) 29%, rgba(15,19,215,0.8575805322128851) 100%);
+border: 3px solid whitesmoke;
+    justify-content: center;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "res res"
+    "cl cl "
+    "bo bo"
+    "cha cha"
+    "bb bb"
+    "ti ti";
+}
+
+.grille h3 {
+height: 50px;
+width: 300px;
+padding-top: 12px;
+background: whitesmoke;
+color: black;
+margin-top: 50px;
+justify-self: center;
+border: 4px solid whitesmoke;
+border-radius: 20px;
+grid-area: res;
+}
+
+.boite {
+    margin-top: 25px;
+    width: 400px;
+    justify-self: center;
+    grid-area: bo;
+}
+
+.boite2 {
+    grid-area: bb;
+}
+
+.grille p {
+    grid-area: cha;
+    margin-top: 15px;
+}
+.btn {
+    color: aqua;
+    background: green;
+    border-radius: 100%;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+}
+#tirage {
+    grid-area: ti;
+    height: 30px;
+    width: 100px;
+    justify-self: center;
+    border-radius: 20px;
+    color: white;
+    background: green;
+}
+
+#clear {
+    grid-area: cl;
+    width: 50px;
+    justify-self: center;
+    margin-top: 20px;
+    color: whitesmoke;
+    background: green;
+    border-radius: 10px;
+}
